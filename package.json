@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "gotgot",
     "scripts": {
-        "test": "./test.sh",
+        "test": "chmod 700 test.sh && ./test.sh",
         "deploy": "aws s3 sync ./static s3://gotgot.careers --delete"
     },
     "author": "",
