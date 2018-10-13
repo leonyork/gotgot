@@ -1,0 +1,13 @@
+{
+    "name": "gotgot",
+    "version": "1.0.0",
+    "description": "gotgot",
+    "scripts": {
+        "deploy": "aws s3 sync ./static s3://gotgot.careers --delete"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "lambci-cli": "^0.2.4"
+    }
+}
