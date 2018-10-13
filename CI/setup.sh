@@ -10,7 +10,7 @@ aws cloudformation create-stack --stack-name $stackname \
     --template-url https://lambci.s3.amazonaws.com/templates/lambci.template \
     --capabilities CAPABILITY_IAM \
     --parameters ParameterKey=GithubToken,ParameterValue=$1 \
-    ParameterKey=Repositories,ParameterValue=gotgot \
+    ParameterKey=Repositories,ParameterValue=leonyork/gotgot \
     ParameterKey=SlackChannel,ParameterValue="#gotgot" \
     ParameterKey=SlackToken,ParameterValue=$2 \
 
