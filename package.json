@@ -4,7 +4,7 @@
     "description": "gotgot",
     "scripts": {
         "test": "chmod 700 test.sh && ./test.sh",
-        "deploy": "aws s3 sync ./static s3://gotgot.careers --delete"
+        "deploy": "aws s3 sync ./static s3://gotgot.careers --delete && aws cloudfront create-invalidation --distribution-id E2KKQRWGRNOE23 --paths /*"
     },
     "author": "",
     "license": "ISC"
